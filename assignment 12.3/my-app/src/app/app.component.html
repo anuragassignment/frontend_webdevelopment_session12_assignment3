@@ -1,0 +1,19 @@
+<section class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div>
+        <a class="navbar-brand" routerLink="/">Brand</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- navbar with links to routes. when clicked routes to respective routes and component -->
+        <ul class="nav navbar-nav">
+          <li><a [routerLink]="['/']">Home</a></li>
+          <li><a [routerLink]="['/registration']">Registration</a></li>
+          <li><a [routerLink]="['/users']">Users</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<!-- router outlet provided where the components view related to routes are loaded -->
+<router-outlet></router-outlet>
